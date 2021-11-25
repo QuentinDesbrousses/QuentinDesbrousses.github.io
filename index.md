@@ -1,1 +1,10 @@
-pages/index.html
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Meta Tag</title>
+      <meta http-equiv = "refresh" content = "3; src = pages/index.html" />
+   </head>
+   <body>
+      <p>Redirecting to another URL</p>
+   </body>
+</html>
