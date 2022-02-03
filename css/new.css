@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    z-index: +1;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/wallpaper1.png");
+    background-position: center top;
+    background-size:cover;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+.myH2 {
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 0%;
+    text-align:center;
+    font-size: 4rem;
+}
+.myP {
+    text-align: justify;
+    padding-left:15%;
+    padding-right:15%;
+    font-size: 20px;
+}
+@media all and (max-width:700px){
+    .myP {
+        padding:2%;
+    }
+}
+
+.content-card {
+    padding-top: 2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    width: 200px;
+    height: 300px;
+    max-width: 200px;
+    margin: 2%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+}
+
+.content-card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 5px 5px 5px;
+}
+
+.typing-text {
+    width: 33ch;
+    animation: typing 2.5s steps(33), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.wrapper {
+    font-family:"Linux Libertine Display G";
+    font-size: 5em;
+    height: 100vh;
+    color: white;
+    /*This part is important for centering*/
+    padding-top: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.link-btn {
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family:"Linux Libertine Display G";
+    background-image: url("https://media.istockphoto.com/photos/white-paper-background-picture-id1040425512?b=1&k=20&m=1040425512&s=170667a&w=0&h=mo6rWtHjzwQCJuwcBjRBzPuSzvZ-iDWqpAHDDrXETOg=");
+}
+.link-btn:hover {
+    border: 0px solid gray;
+    background-color: rgba(242,108,91,0.92);
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 2px 5px 5px;
+    transition-duration: 0.1s;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.icon1 {
+    width: 40px;
+    margin-right: 10px;
+}
+.icon2 {
+    width: 60px;
+    margin-right: 0px;
+}
+
+.content {
+    opacity: 0;
+}
+
+.content:hover {
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
+.img1 {
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+}
+
+.container-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn-group {
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    position: relative;
+    justify-content: center;
+    transform: translate(0px, -200px);
+    -ms-transform: translate(0px, -200px);
+}
+
+.content-card:hover .container-img{
+    opacity: 0.1;
+    z-index: -1;
+}
+.content-card:hover .btn-group{
+    opacity: 1;
+    z-index: 1;
+}
+.text {
+    font-size: 130%;
+}
+.text:hover {
+    cursor: grab;
+}
+
+
+.content-card-study {
+    padding-top: 2%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    height: 300px;
+    width: 300px;
+    max-width: 300px;
+    margin: 2%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 3px 8px;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+}
+
+.content-card-study:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 5px 5px 5px;
+}
+
+.content-card-study:hover .container-img{
+    opacity: 0.1;
+    z-index: -1;
+}
+.content-card-study:hover .btn-group2{
+    opacity: 1;
+    z-index: 1;
+}
+
+.img2 {
+    width: 200px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.btn-group2 {
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    position: relative;
+    justify-content: center;
+    transform: translate(0px, -150px);
+    -ms-transform: translate(0px, -150px);
+}
+
+.container1 {
+    margin: 0%;
+    padding: 1%;
+    background-image: url("https://www.wallpapertip.com/wmimgs/87-877207_simple-gray-wallpapers-white-radial-gradient-background.jpg");
+}
+.container1:hover {
+    /*background-color: rgba(218,218,216,0.22);*/
+    cursor: grab;
+}
+
+.container2 {
+    margin: 0%;
+    padding: 1%;
+    background-image: url("https://cdn-techno.konbini.com/fr/files/2021/04/fond-noir.jpg");
+}
+.container2:hover {
+    background-color: rgba(218,218,216,0.22);
+    cursor: grab;
+}
+
+.photo-div {
+    position: absolute;
+    margin-top: 190px;
+    opacity: 0;
+}
+.photo {
+    margin-left: 20%;
+    width: 100px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.photo-div {
+    transition-duration: 5s;
+    opacity: 1;
+}
