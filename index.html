@@ -1,165 +1,406 @@
-<DOCTYPE html/>
-<html>
-    <head>
-        <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css"></link>
+    <link rel="stylesheet" href="css/bootstrap.rtl.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-grid.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-reboot.rtl.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-utilities.css"></link>
+    <link rel="stylesheet" href="css/bootstrap-utilities.rtl.css"></link>
+    <link rel="stylesheet" href="css/new.css"></link>
 
-        <link rel="stylesheet" href="css/bootstrap.css"></link>
-        <link rel="stylesheet" href="css/bootstrap.rtl.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-grid.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-grid.rtl.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-reboot.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-reboot.rtl.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-utilities.css"></link>
-        <link rel="stylesheet" href="css/bootstrap-utilities.rtl.css"></link>
-        <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>QD</title>
+</head>
 
-        <title>QD</title>
-        <link rel="icon" type="image/jpeg" href=""/>
+<body>
 
-    </head>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a target="_blank" href="https://www.linkedin.com/in/quentin-desbrousses-10b235223/">Quentin Desbrousses</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a target="_blank" href="https://www.facebook.com/quentin.desbrousses.3">Facebook</a></li>
+                <li><a target="_blank" href="https://github.com/QuentinDesbrousses">Github</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/quentin-desbrousses-10b235223/">Linkedin</a></li>
+                <li><a href="mailto:q.desbrousses@gmail.com">Contact me</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+    </div>
+</nav>
+<section class="home wrapper">
+    <div class="typing-text">Watch below to discover my world.<br><img class="photo" src=""></div><br>
+    <!--
+    <div class="photo-div">
+        <img class="photo" src="../assets/img/head1.svg">
+    </div>
+    -->
+</section>
 
 
-    <body>
 
-    <!-- Video games library component -->
-    <div class="wrapper">
+<!-- Content -->
+<div>
 
-        <!-- NavBar -->
-        <nav class="navbar navbar-brand" style="opacity: 75%">
-                <a class="btn btn-outline-light" href="english.html"><img style="height: 25px" src="assets/img/flag-en.png"></a>
-                <a class="btn text-warning btn-outline-light"><strong class="m-3">Quentin Desbrousses</strong></a>
-                <a class="btn btn-outline-light m-3" href="spannish.html"><img style="height: 25px" src="assets/img/flag-es.png"></a>
-        </nav>
+    <!-- Hard skills -->
+    <div class="container1">
+        <h2 class="myH2">Hard skills</h2>
+        <div class="row align-items-center" style="padding: 2%">
 
-        <!-- Description -->
-        <div class="container-fluid mt-3">
-            <div class="text-center text-white">
+            <!-- HTML - CSS - JS -->
+            <div class="content-card col">
+                <h3>HTML - CSS - JS</h3>
                 <br>
-                <h1>Bienvenue sur mon site</h1>
-                <div class="blockquote">
-                    <p>Vous pouvez dès à présent naviguer afin de me découvrir... </p>
-                    <p>(Tips: Click on your flag to watch it in your language)</p>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/htmlcssjs.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <a class="btn link-btn" target="_blank" href="#">
+                            <img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/OOjs_UI_icon_eye.svg/1200px-OOjs_UI_icon_eye.svg.png">
+                            Watch it !
+                        </a>
+                        <a class="btn link-btn" target="_blank" href="https://github.com/QuentinDesbrousses/QuentinDesbrousses.github.io">
+                            <img class="icon2" src="assets/img/github.png">
+                            Code here
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- AngularJS -->
+            <div class="content-card col">
+                <h3>AngularJS</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/angular.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <a class="btn link-btn" target="_blank" href="https://restaurangular-front.web.app/accueil">
+                            <img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/OOjs_UI_icon_eye.svg/1200px-OOjs_UI_icon_eye.svg.png">
+                            Watch it !
+                        </a>
+                        <a class="btn link-btn" target="_blank" href="https://github.com/QuentinDesbrousses/restaurangular-front">
+                            <img class="icon2" src="assets/img/github.png">
+                            Code here
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NuxtJS / ViewJS -->
+            <div class="content-card col">
+                <h3>NuxtJS / ViewJS</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/nuxt.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <a class="btn link-btn" target="_blank" href="https://github.com/BDE-Polytech-MTP/website-front">
+                            <img class="icon2" src="assets/img/github.png">
+                            Code here
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Java -->
+            <div class="content-card col">
+                <h3>Java</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/java.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <a class="btn link-btn" target="_blank" href="https://github.com/QuentinDesbrousses/projet-sep">
+                            <img class="icon2" src="assets/img/github.png">
+                            Code here
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="content-card col">
+                <h3>Python</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/python.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <a class="btn link-btn" target="_blank" href="">
+                            <img class="icon2" src="assets/img/github.png">
+                            Code here
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Compétences -->
-        <h2><strong>Compétences</strong><span></span></h2>
-        <div class="cards">
-            <!-- HTML CSS JS -->
-            <figure class="card ">
-                <img src="https://yetisharetemplates.com/wp-content/uploads/2021/09/2643750_ef39_4-300x400.jpg" />
-                <figcaption><a class="text-white" href="https://www.github.com">Voir plus</a></figcaption>
-            </figure>
-            <!-- Angular -->
-            <figure class="card">
-                <img src="assets/img/angular.png" />
-                <figcaption><a class="text-danger" href="https://www.github.com">Voir plus</a></figcaption>
-            </figure>
-            <!-- NuxtJS / ViewJS -->
-            <figure class="card">
-                <img style="width: 90%" src="assets/img/nuxt.png" />
-                <figcaption><a class="text-success" href="https://github.com/BDE-Polytech-MTP/website-front">Voir plus</a></figcaption>
-            </figure>
-            <!-- Java -->
-            <figure class="card">
-                <img src="assets/img/java.png" />
-                <figcaption><a class="text-primary" href="https://www.github.com">Voir plus</a></figcaption>
-            </figure>
-            <!-- Python -->
-            <figure class="card">
-                <img src="assets/img/python.png" />
-                <figcaption><a class="text-warning" href="https://www.github.com">Voir plus</a></figcaption>
-            </figure>
-        </div>
+    <!-- Soft skills -->
+    <div class="container2">
+        <h2 class="myH2 text-white">Soft Skills</h2>
+        <div class="row align-items-center" style="padding: 2%">
 
-        <!-- Expériences -->
-        <h2><strong>Expériences</strong></h2>
-        <div class="news">
-            <!-- MCE -->
-            <figure class="article">
-                <img style="width: 350px" src="assets/img/MCE_LOGO%20HORIZONTAL_MONOCHROME%20BLANC.png" />
-                <a href="https://www.mtpce.com/">
-                    <figcaption>
-                        <strong><h3>Montpellier Consulting & Engineering (2021-2022) - Junior Entreprise</h3></strong>
-                        <ul style="font-family: sans-serif">
-                            <li><strong>Pôle :</strong> Intégration du service Suivi & Qualité</li>
-                            <li><strong>Poste(s) :</strong> Responsable de projet</li>
-                            <li><strong>Objectif(s) :</strong> Avoir des responsabilités / Acquérir de nouvelles compétences.</li>
-                        </ul>
-                    </figcaption>
-                </a>
-            </figure>
-        </div>
+            <!-- Teamworking -->
+            <div class="content-card col">
+                <h3>Team working</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/teamwork.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <p class="text">
+                            <strong>
+                                I really appreciate working in a team.
+                                I think that plurality is the key to make progress, whatever the field is.
+                                Because different point of views is the best way to find new solutions for the future issues.
+                            </strong>
+                        </p>
+                    </ul>
+                </div>
+            </div>
 
-        <!-- Formation -->
-        <h2><strong>Formation</strong></h2>
-        <div class="news">
-            <!-- Polytech Montpellier -->
-            <figure class="article">
-                <img src="assets/img/polytech-montpellier.jpg" />
-                <a href="https://www.polytech.umontpellier.fr/formation/cycle-ingenieur/informatique-et-gestion">
-                    <figcaption>
-                        <strong><h3>Polytech Montpellier (2020-2023) - Ecole d'ingénieur Universitaire</h3></strong>
-                        <ul style="font-family: sans-serif">
-                            <li><strong>Spécialité :</strong> Informatique & Gestion</li>
-                            <li><strong>Diplôme :</strong> Prévu pour 2023 </li>
-                        </ul>
-                    </figcaption>
-                </a>
-            </figure>
-            <!-- Lycée Camille Guérin -->
-            <figure class="article">
-                <img src="assets/img/prepa.jpg" />
-                <a href="https://lyc-camilleguerin.fr/les-cpge/mpsi-pcsi-2/">
-                    <figcaption>
-                        <strong><h3>CPGE Camille-Guérin Poitiers (2017-2020)</h3></strong>
-                        <ul style="font-family: sans-serif">
-                            <li><strong>Spécialité :</strong> MPSI (1ere année), PSI (2e/3e années)/</li>
-                        </ul>
-                    </figcaption>
-                </a>
-            </figure>
-            <!-- Lycée Xavier Bernard -->
-            <figure class="article">
-                <img src="assets/img/bac.jpg" />
-                <a href="https://www.venours.fr/le-lycee-xavier-bernard/">
-                    <figcaption>
-                        <strong><h3>Baccalauréat Général (2017)</h3></strong>
-                        <ul style="font-family: sans-serif">
-                            <li><strong>Spécialité :</strong> Ecologie et Agronomie du Territoire</li>
-                            <li><strong>Mention :</strong> Assez bien (12-14) </li>
-                            <li><strong>Lycée :</strong> Xavier-Bernard, Venours, Vienne (86) </li>
-                        </ul>
-                    </figcaption>
-                </a>
-            </figure>
-        </div>
+            <!-- Responsibility -->
+            <div class="content-card col">
+                <h3>Responsibility</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/poignee.jpg">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <p class="text">
+                            <strong>
+                                In my opinion, be responsible is one of the most important soft skills.
+                                It means that people can trust you to handle a thing and the outcoming issues.
+                                To carry important stuff is not a problem.
+                            </strong>
+                        </p>
+                    </ul>
+                </div>
+            </div>
 
-        <!-- Centres d'intérêt -->
-        <h2><strong>Centres d'intérêt</strong></h2>
-        <div class="cards">
-            <!-- Jeux vidéo -->
-            <figure class="card">
-                <img src="assets/img/valorant.jpg" />
-                <figcaption>
-                    <h3>Jeux vidéo</h3>
-                </figcaption>
-            </figure>
-            <!-- DJ -->
-            <figure class="card">
-                <img src="assets/img/dj.jpg" />
-                <figcaption>
-                    <h3>DJ</h3>
-                </figcaption>
-            </figure>
+            <!-- Creativity -->
+            <div class="content-card col">
+                <h3>Creativity</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/think.jpg">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <p class="text">
+                            <strong>
+                                When a problem happen, I always try to look at it by different angles to find a solution even if I have to rethink the whole design.
+                                I try to not stay blocked by "classical" view of an issue.
+                            </strong>
+                        </p>
+                    </ul>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
-    <!-- js import -->
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.esm.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
-    </body>
+    <!-- Work experience -->
+    <div class="container1">
+        <h2 class="myH2">Work experiences</h2>
+        <div class="row align-items-center" style="padding: 2%">
+
+            <!-- MCE -->
+            <div class="content-card col">
+                <h3>Montpellier Consulting & Engineering</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/MCE_LOGO%20PRINCIPAL_COULEUR%20PRINCIPALE.png">
+                </div>
+                <div class="btn-group">
+                    <ul class="text">
+                        <p><strong style="font-size: 16px">Team<br></strong><strong>Quality monitoring department</strong><br></p>
+                        <p><strong style="font-size: 16px">Job(s)<br></strong><strong>Project manager</strong><br></p>
+                        <p><strong style="font-size: 16px">Objective(s)<br></strong><strong>Get responsibilities / Get new skills</strong><br></p>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="container2">
+        <h2 class="myH2 text-white">Studies</h2>
+        <div class="row align-items-center" style="padding: 2%">
+
+            <!-- Polytech Montpellier -->
+            <div class="content-card-study col">
+                <h3>Computer Science & Management Engineering</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img2" src="assets/img/polytech-montpellier.jpg">
+                </div>
+                <div class="btn-group2">
+                    <ul class="text">
+                        <p><strong style="font-size: 16px">Institution</strong><strong><br>Polytech Montpellier</strong><br></p>
+                        <p><strong style="font-size: 16px">Graduation</strong><strong><br>Expected in 2023</strong><br></p>
+                        <a class="btn link-btn" style="padding: 3%" target="_blank" href="https://www.polytech.umontpellier.fr/formation/cycle-ingenieur/informatique-et-gestion">
+                            <strong style="font-size: 20px">See more</strong>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Camille Guérin -->
+            <div class="content-card-study col">
+                <h3>Higher School - Preparatory Classes</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img2" src="assets/img/prepa.jpg">
+                </div>
+                <div class="btn-group2">
+                    <ul class="text">
+                        <p><strong style="font-size: 16px">Institution</strong><strong><br>Camille Guérin High School</strong><br></p>
+                        <p><strong style="font-size: 16px">Fields</strong><strong><br>Maths, Physics, Industrial Science</strong><br></p>
+                        <p><strong>Graduated in 2019 after 2 years</strong></p>
+                        <a class="btn link-btn" style="padding: 3%" target="_blank" href="https://www.polytech.umontpellier.fr/formation/cycle-ingenieur/informatique-et-gestion">
+                            <strong style="font-size: 20px">See more</strong>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Xavier-Bernard -->
+            <div class="content-card-study col">
+                <h3>Equivalent to GCE "A" levels in Science</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img2" src="assets/img/bac.jpg">
+                </div>
+                <div class="btn-group2">
+                    <ul class="text">
+                        <p><strong style="font-size: 16px">Institution</strong><strong><br>Xavier-Bernard High School</strong><br></p>
+                        <p><strong style="font-size: 16px">Speciality</strong><strong><br>Agronomy</strong><br></p>
+                        <p><strong>Graduated in 2017</strong><br></p>
+                        <a class="btn link-btn" style="padding: 3%" target="_blank" href="https://www.venours.fr/le-lycee-xavier-bernard/">
+                            <strong style="font-size: 20px">See more</strong>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="container1">
+        <h2 class="myH2">Hobbies</h2>
+        <div class="row align-items-center" style="padding: 2%">
+
+            <!-- Team Strategy -->
+            <div class="content-card col">
+                <h3>Team Strategy</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/strategy.png">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <p class="text">
+                            <strong>
+                                I like MOBAs and FPS video games because it is based on how to play with your teammates to win.
+                                Everyone has an important role and the victory depends on it.
+                            </strong>
+                            <strong style="font-size: 16px">Games</strong><strong><br>League of Legends Valorant</strong>
+                        </p>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chess -->
+            <div class="content-card col">
+                <h3>Chess</h3>
+                <br>
+                <div class="container-img">
+                    <img class="img1" src="assets/img/chess.jpg">
+                </div>
+                <div class="btn-group">
+                    <ul>
+                        <p class="text">
+                            <strong>
+                                I like chess because it is based on how is it possible to react to something and make it worth it.
+                                It is also important to create and follow your strategy to win.
+                            </strong>
+                        </p>
+                        <a class="btn link-btn" target="_blank" href="#">
+                            <img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/OOjs_UI_icon_eye.svg/1200px-OOjs_UI_icon_eye.svg.png">
+                            Watch it !
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Curriculum Vitae -->
+    <div class="container2">
+        <h2 class="myH2 text-white"></h2>
+        <div class="row align-items-center">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+
+    $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+
+    });
+
+</script>
+
+</body>
+
 </html>
