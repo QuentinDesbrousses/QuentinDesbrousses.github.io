@@ -561,8 +561,10 @@ body {
 
 .photo-div {
     position: absolute;
-    margin-top: 190px;
-    opacity: 0;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 10px;
+    opacity: 1;
 }
 .photo {
     margin-left: 20%;
